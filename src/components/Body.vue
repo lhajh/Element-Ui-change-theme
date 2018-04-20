@@ -67,6 +67,15 @@ export default {
             'Pagination',
             'Badge'
           ]
+        },
+        {
+          name: 'Notice',
+          child: [
+            'Alert',
+            'Message',
+            'MessageBox',
+            'Notification'
+          ]
         }
       ],
       activeIndex: url === -1 ? window.location.hash.substring(1) : window.location.hash.substring(1, +url + 1)

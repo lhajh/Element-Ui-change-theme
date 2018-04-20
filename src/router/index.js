@@ -21,6 +21,10 @@ import Progress from 'compon/Progress'
 import Tree from 'compon/Tree'
 import Pagination from 'compon/Pagination'
 import Badge from 'compon/Badge'
+import Alert from 'compon/Alert'
+import Message from 'compon/Message'
+import MessageBox from 'compon/MessageBox'
+import Notification from 'compon/Notification'
 
 Vue.use(Router)
 
@@ -125,6 +129,26 @@ export default new Router({
           path: '/Badge',
           name: 'Badge',
           component: Badge
+        },
+        {
+          path: '/Alert',
+          name: 'Alert',
+          component: Alert
+        },
+        {
+          path: '/Message',
+          name: 'Message',
+          component: Message
+        },
+        {
+          path: '/MessageBox',
+          name: 'MessageBox',
+          component: MessageBox
+        },
+        {
+          path: '/Notification',
+          name: 'Notification',
+          component: Notification
         }
       ]
     }
