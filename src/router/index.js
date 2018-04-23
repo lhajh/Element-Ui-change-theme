@@ -25,6 +25,16 @@ import Alert from 'compon/Alert'
 import Message from 'compon/Message'
 import MessageBox from 'compon/MessageBox'
 import Notification from 'compon/Notification'
+import NavMenu from 'compon/NavMenu'
+import Tabs from 'compon/Tabs'
+import Breadcrumb from 'compon/Breadcrumb'
+import Dropdown from 'compon/Dropdown'
+import Steps from 'compon/Steps'
+import Dialog from 'compon/Dialog'
+import Popover from 'compon/Popover'
+import Card from 'compon/Card'
+import Carousel from 'compon/Carousel'
+import Collapse from 'compon/Collapse'
 
 Vue.use(Router)
 
@@ -149,6 +159,56 @@ export default new Router({
           path: '/Notification',
           name: 'Notification',
           component: Notification
+        },
+        {
+          path: '/NavMenu',
+          name: 'NavMenu',
+          component: NavMenu
+        },
+        {
+          path: '/Tabs',
+          name: 'Tabs',
+          component: Tabs
+        },
+        {
+          path: '/Breadcrumb',
+          name: 'Breadcrumb',
+          component: Breadcrumb
+        },
+        {
+          path: '/Dropdown',
+          name: 'Dropdown',
+          component: Dropdown
+        },
+        {
+          path: '/Steps',
+          name: 'Steps',
+          component: Steps
+        },
+        {
+          path: '/Dialog',
+          name: 'Dialog',
+          component: Dialog
+        },
+        {
+          path: '/Popover',
+          name: 'Popover',
+          component: Popover
+        },
+        {
+          path: '/Card',
+          name: 'Card',
+          component: Card
+        },
+        {
+          path: '/Carousel',
+          name: 'Carousel',
+          component: Carousel
+        },
+        {
+          path: '/Collapse',
+          name: 'Collapse',
+          component: Collapse
         }
       ]
     }

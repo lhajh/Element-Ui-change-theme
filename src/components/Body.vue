@@ -76,6 +76,26 @@ export default {
             'MessageBox',
             'Notification'
           ]
+        },
+        {
+          name: 'Navigation',
+          child: [
+            'NavMenu',
+            'Tabs',
+            'Breadcrumb',
+            'Dropdown',
+            'Steps'
+          ]
+        },
+        {
+          name: 'Others',
+          child: [
+            'Dialog',
+            'Popover',
+            'Card',
+            'Carousel',
+            'Collapse'
+          ]
         }
       ],
       activeIndex: url === -1 ? window.location.hash.substring(1) : window.location.hash.substring(1, +url + 1)
