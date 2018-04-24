@@ -1,7 +1,13 @@
 <template>
   <div class="body">
     <el-container>
-      <el-header height="120px">Header</el-header>
+      <el-header height="120px">
+        <el-radio-group v-model="themeValue">
+          <el-radio label="01fbe4">01fbe4</el-radio>
+          <el-radio label="6">备选项</el-radio>
+          <el-radio label="9">备选项</el-radio>
+        </el-radio-group>
+      </el-header>
       <el-container>
         <el-aside width="200px">
           <el-menu
@@ -26,11 +32,16 @@
 </template>
 
 <script>
+import { changeTheme } from 'utils'
 export default {
   name: 'Body',
   watch: {
     $route (url) {
       this.activeIndex = url.path
+    },
+    themeValue (data) {
+      changeTheme(data)
+      localStorage.setItem('themeValue', data)
     }
   },
   components: {},
@@ -38,6 +49,7 @@ export default {
   data () {
     let url = window.location.hash.substring(1).indexOf('?')
     return {
+      themeValue: '',
       router: [
         {name: 'Basic', child: ['Button']},
         {

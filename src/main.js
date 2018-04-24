@@ -10,9 +10,16 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'assets/reset.css'
 import 'assets/custom.css'
 
+import { changeTheme } from 'utils'
+
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
+
+// 加载用户主题
+if (localStorage.getItem('themeValue')) {
+  changeTheme(localStorage.getItem('themeValue'))
+}
 
 /* eslint-disable no-new */
 new Vue({
