@@ -4,7 +4,7 @@
       <el-header height="120px">
         <el-radio-group v-model="themeValue">
           <el-radio label="01fbe4">01fbe4</el-radio>
-          <el-radio label="6">备选项</el-radio>
+          <el-radio label="1c223a">1c223a</el-radio>
           <el-radio label="9">备选项</el-radio>
         </el-radio-group>
       </el-header>
