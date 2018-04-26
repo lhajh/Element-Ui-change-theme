@@ -15,6 +15,7 @@ import TimePicker from 'compon/TimePicker'
 import DatePicker from 'compon/DatePicker'
 import Upload from 'compon/Upload'
 import Transfer from 'compon/Transfer'
+import Form from 'compon/Form'
 import Table from 'compon/Table'
 import Tag from 'compon/Tag'
 import Progress from 'compon/Progress'
@@ -44,6 +45,7 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Body,
+      redirect: '/Button',
       children: [
         {
           path: '/Button',
@@ -109,6 +111,11 @@ export default new Router({
           path: '/Transfer',
           name: 'Transfer',
           component: Transfer
+        },
+        {
+          path: '/Form',
+          name: 'Form',
+          component: Form
         },
         {
           path: '/Table',

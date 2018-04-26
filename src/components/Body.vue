@@ -41,7 +41,6 @@ export default {
     },
     themeValue (data) {
       changeTheme(data)
-      localStorage.setItem('themeValue', data)
     }
   },
   components: {},
@@ -66,7 +65,8 @@ export default {
             'TimePicker',
             'DatePicker',
             'Upload',
-            'Transfer'
+            'Transfer',
+            'Form'
           ]
         },
         {
@@ -116,6 +116,7 @@ export default {
   methods: {},
   created () {},
   mounted () {
+    this.themeValue = localStorage.getItem('themeValue')
   }
 }
 </script>

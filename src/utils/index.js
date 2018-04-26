@@ -25,4 +25,5 @@ export const changeTheme = themeValue => {
       head.appendChild(link)
     }
   }
+  localStorage.setItem('themeValue', themeValue)
 }
