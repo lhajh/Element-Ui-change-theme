@@ -2,14 +2,14 @@
 
 // 主题颜色
 @theme: #1c223a;
-@themeBg: #0586a6;
-@color: #fff;
+@themeBg: transparent;
+@color: #6c81ac;
 @hoverBg: transparent;
-@hover: #fff;
+@hover: #b3c1e1;
 @activeBg: transparent;
-@active: #01d5be;
+@active: #b3c1e1;
 @disabledBg: transparent;
-@disabled: #ccc;
+@disabled: #8e919d;
 
 
 // Element Ui
@@ -34,393 +34,33 @@
   background: @disabledBg;
 }
 
-/* Element Ui 样式 */
-
-/* button 样式 */
-.el-button--text {
-  color: @color;
-}
-.el-button--text:focus {
-  .active
-}
-.el-button--text:hover {
-  .hover
-}
-
-/* radio */
-.el-radio {
-  color: @color;
-}
-.el-radio__input.is-checked+.el-radio__label {
-  .active
-}
-.el-radio__input.is-checked .el-radio__inner {
-  background: @active;
-}
-
-/* Checkbox */
-.el-checkbox {
-  color: @color;
-}
-.el-checkbox__inner {
-  background: @themeBg;
-}
-.el-checkbox__input.is-checked .el-checkbox__inner,
-.el-checkbox__input.is-indeterminate .el-checkbox__inner {
-  background: @activeBg
-}
-.el-checkbox__input.is-checked+.el-checkbox__label {
-  color: @active;
-}
-.el-checkbox__input.is-disabled .el-checkbox__inner {
-  background: @disabledBg;
-}
-.el-checkbox__input.is-disabled+span.el-checkbox__label {
-  color: @disabled;
-}
-
-/* input */
-input {
-  background: @themeBg;
-}
-.el-input__inner, .el-textarea__inner, .el-input-group__append, .el-input-group__prepend {
-  color: @color;
-  background: @themeBg;
-}
-.el-input.is-disabled .el-input__inner {
-  .disabled
-}
-
-/* Select */
-.el-select-dropdown {
-  color: @color;
-  background: @themeBg;
-}
-.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-  .hover
-}
-.el-select-dropdown__item.selected {
-  .active
-}
-.el-select .el-tag {
-  background: @selectTagBg;
-}
-
-/* Cascader */
-.el-carousel__mask, .el-cascader-menu {
-  background: @themeBg;
-}
-.el-cascader-menu__item {
-  color: @color;
-}
-.el-cascader-menu__item.is-active {
-  .active
-}
-.el-cascader-menu__item.is-disabled {
-  .disabled
-}
-
-/* Switch */
-.el-switch__label {
-  color: @color;
-}
-.el-switch__label.is-active {
-  .active
-}
-
-/* TimePicker */
-.el-picker-panel {
-  color: @color;
-  background: @themeBg;
-}
-.el-time-panel {
-  background: @themeBg;
-}
-.el-time-spinner__item.disabled {
-  .disabled
-}
-.el-time-spinner__item {
-  color: @color;
-}
-.el-time-spinner__item:hover:not(.disabled):not(.active) {
-  .hover
-}
-.time-select-item.selected:not(.disabled) {
-  .active
-}
-
-/* DatePicker */
-// .el-date-table td.today span,
-.el-date-table th,
-.el-date-picker__header-label,
-.el-picker-panel__icon-btn,
-.el-year-table td .cell,
-.el-month-table td .cell,
-.el-picker-panel__shortcut {
-  color: @color;
-}
-
-.el-date-picker__header-label:hover {
-  .hover
-}
-.el-date-picker__header-label.active {
-  .active
-}
-.el-year-table td .cell:hover {
-  .hover
-}
-.el-year-table td.current:not(.disabled) .cell {
-  .active
-}
-.el-month-table td .cell:hover {
-  .hover
-}
-.el-month-table td.current:not(.disabled) .cell {
-  .active
-}
-.el-date-table td.available:hover {
-  .hover;
-  color: @color;
-}
-.el-date-table td.disabled,
-.el-date-table td.disabled div {
-  .disabled
-}
-.el-picker-panel [slot=sidebar], .el-picker-panel__sidebar {
-  background: @themeBg;
-}
-.el-date-table.is-week-mode .el-date-table__row.current,
-.el-date-table.is-week-mode .el-date-table__row.current div {
-  .active
-}
-.el-date-table.is-week-mode .el-date-table__row:hover,
-.el-date-table.is-week-mode .el-date-table__row:hover div,
-.el-date-table.is-week-mode .el-date-table__row:hover td.available:hover {
-  .hover
-}
-.el-date-table td.in-range div:hover {
-  .hover
-}
-.el-date-table td.next-month:hover,
-.el-date-table td.prev-month:hover {
-  .hover
-}
-
-/* Transfer */
-.el-transfer-panel, .el-transfer-panel .el-transfer-panel__header {
-  background: @theme;
-}
-.el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label {
-  color: @color;
-}
-
-/* Form */
-.el-form-item__label {
-  color: @color;
-}
-
-/* Table */
-.el-table {
-  color: @color;
-  background: @theme;
-  thead {
-    color: @color;
+.body {
+  height: 100%;
+  .el-header {
+    background: #3d4150;
+    text-align: center;
+    line-height: 120px;
   }
-  tr {
-    background: @theme;
-    th {
-      background: @theme;
-      div {
-        color: @color;
-        background: @theme;
-      }
+  .el-container {
+    height: 100%;
+    .el-container {
+      height: ~"-moz-calc(100% - 120px)";
+      height: ~"-webkit-calc(100% - 120px)";
+      height: ~"calc(100% - 120px)";
     }
   }
-  .el-table__empty-text {
-    color: @color;
+  .el-aside {
+    background: #d3dce6;
+    .el-menu {
+      background: transparent;
+    }
+  }
+  .el-main {
+    background: #e9eef3;
   }
 }
-.el-table--enable-row-hover .el-table__body tr:hover>td {
-  .hover
-}
-.el-table--striped .el-table__body tr.el-table__row--striped td {
-  background: @tableStripedBg
+.block {
+  line-height: 35px;
 }
 
-/* Tree */
-.el-tree {
-  color: @color;
-  background: @theme;
-}
-.el-tree-node__content:hover {
-  .hover
-}
-.el-tree-node:focus>.el-tree-node__content,
-.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
-  .active
-}
-
-/* Pagination */
-.el-pagination {
-  color: @color;
-}
-.el-pager li {
-  color: @color;
-  background: @theme;
-}
-.el-pager li:hover {
-  .hover
-}
-.el-pager li.active {
-  .active
-}
-.el-pagination .btn-next, .el-pagination .btn-prev {
-  color: @color;
-  background: @theme;
-}
-.el-pagination button.disabled {
-  .disabled
-}
-.el-pager li.btn-quicknext, .el-pager li.btn-quickprev {
-  color: @color;
-  background: @theme;
-}
-
-/* MessageBox */
-.el-message-box {
-  background: @theme;
-}
-.el-message-box__title, .el-message-box__content {
-  color: @color;
-}
-
-/* NavMenu */
-.el-menu {
-  background: @theme;
-}
-.el-menu--horizontal>.el-menu-item {
-  color: @color;
-}
-.el-menu--horizontal>.el-menu-item.is-active {
-  .active
-}
-.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
-  .hover
-}
-.el-menu--horizontal .el-menu .el-menu-item,
-.el-menu--horizontal .el-menu .el-submenu__title {
-  background: @theme;
-}
-.el-menu--horizontal .el-menu .el-menu-item.is-active,
-.el-menu--horizontal .el-menu .el-submenu__title.is-active {
-  .active
-}
-.el-submenu__title {
-  color: @color;
-}
-.el-submenu__title:hover {
-  .hover
-}
-.el-submenu__title:focus {
-  .active
-}
-.el-menu-item {
-  color: @color;
-}
-.el-menu-item:hover {
-  .hover
-}
-.el-menu-item:focus {
-  .active
-}
-
-/* Tabs */
-.el-tabs__active-bar {
-  background: @themeBg;
-}
-.el-tabs__item {
-  color: @color;
-}
-.el-tabs__item:hover {
-  .hover
-}
-.el-tabs__item.is-active {
-  .active
-}
-.el-tabs--border-card,
-.el-tabs--border-card>.el-tabs__header {
-  background: @theme;
-}
-.el-tabs--border-card>.el-tabs__header .el-tabs__item {
-  color: @color;
-}
-.el-tabs--border-card>.el-tabs__header .el-tabs__item:hover,
-.el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover {
-  .hover
-}
-.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
-  .active
-}
-
-/* Breadcrumb */
-.el-breadcrumb__inner, .el-breadcrumb__inner a {
-  color: @color;
-}
-.el-breadcrumb__inner a:hover, .el-breadcrumb__inner:hover {
-  .hover
-}
-.el-breadcrumb__item:last-child .el-breadcrumb__inner,
-.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
-.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover,
-.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
-  .disabled
-}
-
-/* Dropdown */
-.el-dropdown {
-  color: @color;
-}
-.el-dropdown-link {
-  cursor: pointer;
-}
-.el-dropdown-menu {
-  background: @theme;
-}
-.el-dropdown-menu__item {
-  color: @color;
-}
-.el-dropdown-menu__item.is-disabled {
-  .disabled
-}
-.el-dropdown-menu__item:focus {
-  .active
-}
-.el-dropdown-menu__item:not(.is-disabled):hover {
-  .hover
-}
-
-/* Dialog  */
-.el-dialog {
-  background: @theme;
-}
-.el-dialog__wrapper .el-dialog .el-dialog__header {
-  padding: 10px 20px;
-}
-.el-dialog__wrapper .el-dialog .el-dialog__header .el-dialog__title {
-  color: @dialogTit
-}
-
-/* Card */
-.el-card {
-  color: @color;
-  background: @theme;
-}
-
-/* Collapse */
-.el-collapse-item__header, .el-collapse-item__wrap {
-  color: @color;
-  background: @theme;
-}
-.el-collapse-item__content {
-  color: @color;
-}
+/* Element Ui 样式 */

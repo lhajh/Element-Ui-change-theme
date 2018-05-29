@@ -122,32 +122,4 @@ export default {
 </script>
 
 <style lang="less">
-  .body {
-    height: 100%;
-    .el-header {
-      background-color: #B3C0D1;
-      color: #333;
-      text-align: center;
-      line-height: 120px;
-    }
-    .el-container {
-      height: 100%;
-      .el-container {
-        height: ~"-moz-calc(100% - 120px)";
-        height: ~"-webkit-calc(100% - 120px)";
-        height: ~"calc(100% - 120px)";
-      }
-    }
-    .el-aside {
-      background-color: #D3DCE6;
-      color: #333;
-    }
-    .el-main {
-      background-color: #E9EEF3;
-      color: #333;
-    }
-  }
-  .block {
-    line-height: 35px;
-  }
 </style>
